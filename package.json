@@ -1,0 +1,17 @@
+{
+  "name": "md22",
+  "version": "1.0.0",
+  "description": "first node project",
+  "main": "mes_tests.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "LeoLaurent",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
