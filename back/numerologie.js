@@ -23,3 +23,7 @@ function chiffreAssocie(chaine) {
     }
     return valeur
 }
+
+module.exports = {
+  chiffre: chiffreAssocie,
+}

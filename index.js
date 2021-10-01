@@ -19,6 +19,18 @@ app.get('/', (req, res) => {
 })
 
 
+app.get(encodeURI('/prénom'), (req, res) => {
+    console.log(req.query)
+    prenom = req.query["valeur"]
+    chiffre = 8
+
+    res.json({
+        prénom: prenom,
+        chiffre: chiffre,
+    })
+})
+
+
 app.use(function (req, res) {
     console.log("Jamais 4 sans 4 : " + req.url);
 
