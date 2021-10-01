@@ -3,6 +3,8 @@ const path = require('path')
 const express = require('express')
 const app = express()
 
+const numerologie = require('./back/numerologie');
+
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -22,7 +24,7 @@ app.get('/', (req, res) => {
 app.get(encodeURI('/prénom'), (req, res) => {
     console.log(req.query)
     prenom = req.query["valeur"]
-    chiffre = 8
+    chiffre = numerologie.chiffre(prenom)
 
     res.json({
         prénom: prenom,
