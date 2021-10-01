@@ -6,7 +6,7 @@ const app = express()
 const numerologie = require('./back/numerologie');
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 10416;
 
 app.use(function (req, res, next) {
     date = new Date(Date.now())
